@@ -2,8 +2,79 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Youtube api player</title>
+        <title>youtubeapiplayer/</title>
+        <link rel="stylesheet" type="text/css" href="css/content.css" />
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/youtubeapiplayer.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                new Youtubeapiplayer('player1', {
+                    videoId: 'fkEwK91p7AQ',
+                    width: 320,
+                    height: 240
+                });
+
+                new Youtubeapiplayer('player2', {
+                    videoId: 'SFn0eZXtEZs',
+                    width: 320,
+                    height: 240
+                });
+
+                new Youtubeapiplayer('player3', {
+                    width: 320,
+                    height: 240
+                });
+            });
+        </script>
     </head>
     <body>
+        <div class="youtubeapiplayer">
+            <div id="player1"></div>
+            <div class="controls">
+                <a class="control-play" href="#">Play Video</a>
+                <a class="control-pause" href="#">Pause Video</a>
+                <a class="control-stop" href="#">Stop Video</a>
+                <a class="control-mute" href="#">Mute Video</a>
+                <a class="control-unmute" href="#">Unmute Video</a>
+                <div class="playprogress-bar">
+                    <div class="playprogress"></div>
+                </div>
+                <div class="volume-bar">
+                    <div class="volume-slider"></div>
+                </div>
+            </div>
+        </div>
+        <div class="youtubeapiplayer">
+            <div id="player2"></div>
+            <div class="controls">
+                <a class="control-play" href="#">Play Video</a>
+                <a class="control-pause" href="#">Pause Video</a>
+                <a class="control-stop" href="#">Stop Video</a>
+                <a class="control-mute" href="#">Mute Video</a>
+                <a class="control-unmute" href="#">Unmute Video</a>
+                <div class="playprogress-bar">
+                    <div class="playprogress"></div>
+                </div>
+                <div class="volume-bar">
+                    <div class="volume-slider"></div>
+                </div>
+            </div>
+        </div>
+        <div class="youtubeapiplayer">
+            <div id="player3"></div>
+            <div class="controls">
+                <a class="control-play" href="#">Play Video</a>
+                <a class="control-pause" href="#">Pause Video</a>
+                <a class="control-stop" href="#">Stop Video</a>
+                <a class="control-mute" href="#">Mute Video</a>
+                <a class="control-unmute" href="#">Unmute Video</a>
+                <div class="playprogress-bar">
+                    <div class="playprogress"></div>
+                </div>
+                <div class="volume-bar">
+                    <div class="volume-slider"></div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
