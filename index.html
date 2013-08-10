@@ -9,71 +9,101 @@
         <script type="text/javascript">
             $(function() {
                 new Youtubeapiplayer('player1', {
-                    videoId: 'fkEwK91p7AQ',
-                    width: 320,
-                    height: 240
+                    videoId: 'vRX7BXiJYGM',
+                    width: 640,
+                    height: 360,
+                    volume: 20
                 });
 
                 new Youtubeapiplayer('player2', {
                     videoId: 'SFn0eZXtEZs',
-                    width: 320,
-                    height: 240
+                    width: 640,
+                    height: 360,
+                    volume: 20
                 });
 
                 new Youtubeapiplayer('player3', {
-                    width: 320,
-                    height: 240
+                    width: 640,
+                    height: 360,
+                    volume: 20
                 });
             });
         </script>
     </head>
     <body>
         <div class="youtubeapiplayer">
-            <div id="player1"></div>
-            <div class="controls">
+            <div class="player-overlay sprite"></div>
+            <div id="player1" class="playerholder"></div>
+            <div class="controls sprite">
                 <a class="control-play" href="#">Play Video</a>
                 <a class="control-pause" href="#">Pause Video</a>
                 <a class="control-stop" href="#">Stop Video</a>
                 <a class="control-mute" href="#">Mute Video</a>
                 <a class="control-unmute" href="#">Unmute Video</a>
+                <div class="current-time">00:00</div>
+                <div class="remaining-time">00:00</div>
                 <div class="playprogress-bar">
-                    <div class="playprogress"></div>
+                    <div class="playprogress sprite"></div>
+                </div>
+                <div class="bufferprogress-bar">
+                    <div class="bufferprogress sprite"></div>
                 </div>
                 <div class="volume-bar">
                     <div class="volume-slider"></div>
                 </div>
+                <ul class="availableQualityLevels">
+                    <li>Loading available quality levels</li>
+                </ul>
             </div>
         </div>
-        <div class="youtubeapiplayer">
-            <div id="player2"></div>
-            <div class="controls">
+        <div class="youtubeapiplayer sprite">
+            <div class="player-overlay sprite"></div>
+            <div id="player2" class="playerholder"></div>
+            <div class="controls sprite">
                 <a class="control-play" href="#">Play Video</a>
                 <a class="control-pause" href="#">Pause Video</a>
                 <a class="control-stop" href="#">Stop Video</a>
                 <a class="control-mute" href="#">Mute Video</a>
                 <a class="control-unmute" href="#">Unmute Video</a>
+                <div class="current-time">00:00</div>
+                <div class="remaining-time">00:00</div>
                 <div class="playprogress-bar">
                     <div class="playprogress"></div>
+                </div>
+                <div class="bufferprogress-bar">
+                    <div class="bufferprogress"></div>
                 </div>
                 <div class="volume-bar">
                     <div class="volume-slider"></div>
                 </div>
+                <ul class="availableQualityLevels">
+                    <li>Loading available quality levels</li>
+                </ul>
             </div>
         </div>
-        <div class="youtubeapiplayer">
-            <div id="player3"></div>
-            <div class="controls">
+        <div class="youtubeapiplayer sprite">
+            <div class="player-overlay sprite"></div>
+            <div id="player3" class="playerholder"></div>
+            <div class="controls sprite">
                 <a class="control-play" href="#">Play Video</a>
                 <a class="control-pause" href="#">Pause Video</a>
                 <a class="control-stop" href="#">Stop Video</a>
                 <a class="control-mute" href="#">Mute Video</a>
                 <a class="control-unmute" href="#">Unmute Video</a>
+                <div class="current-time">00:00</div>
+                <div class="remaining-time">00:00</div>
                 <div class="playprogress-bar">
                     <div class="playprogress"></div>
+                </div>
+                <div class="bufferprogress-bar">
+                    <div class="bufferprogress"></div>
                 </div>
                 <div class="volume-bar">
                     <div class="volume-slider"></div>
                 </div>
+                <ul class="availableQualityLevels">
+                    <li>Loading available quality levels</li>
+                </ul>
             </div>
         </div>
     </body>

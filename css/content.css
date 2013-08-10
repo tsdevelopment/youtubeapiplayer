@@ -6,15 +6,44 @@
 }
 
 body {
+    background: url('../images/background.png') center;
     line-height: 18px;
-    font-size: 85%;
+    font-size: 80%;
     font-family: sans-serif;
+    color: #fff;
+}
+
+.sprite {
+    background: transparent url('../images/videoplayer.png') no-repeat;
 }
 
 .youtubeapiplayer {
-    border: 1px solid #000;
-    margin: 10px;
-    padding: 10px;
+    width: 513px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.player-overlay {
+    width: 513px;
+    height: 492px;
+    background-position: 0px -78px;
+    position: absolute;
+    z-index: 1;
+}
+
+.playerholder {
+    margin-left: 29px;
+    margin-top: 37px;
+}
+
+.controls {
+    width: 455px;
+    height: 54px;
+    background-position: 0px -24px;
+    position: absolute;
+    top: 273px;
+    left: 29px;
+    z-index: 2;
 }
 
 .volume-bar {
@@ -32,15 +61,19 @@ body {
 }
 
 .playprogress-bar {
-    border: 1px solid #000;
-    height: 10px;
-    background: #ccc;
-    position: relative;
+    width: 181px;
 }
 
 .playprogress {
-    width: 10px;
-    height: 10px;
-    background: #000;
-    width: 50%;
+    height: 8px;
+    background-position: -181px 0px;
+}
+
+.bufferprogress-bar {
+    width: 181px;
+}
+
+.bufferprogress {
+    height: 8px;
+    background-position: -362px 0px;
 }
